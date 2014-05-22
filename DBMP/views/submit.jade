@@ -1,0 +1,11 @@
+doctype html
+html 
+	head
+		title=title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		meta(http-equiv="Refresh",content="3,url=#{link}")
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+	body
+		h1 Welcome to Jade
+		p #{content}
+		p 您将在3秒后返回首页

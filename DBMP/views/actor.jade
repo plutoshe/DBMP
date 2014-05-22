@@ -1,0 +1,14 @@
+extends layout
+
+block haha
+	h2=title
+	div
+		form(action="#{submit}", method="post")
+			for item in inputTable
+				div(data-role='fieldcontain')
+					fieldset(data-role='controlgroup')
+						label(for=item['tname']) #{item['demostration']} 
+						br
+						input(id=item['tname'],type='text',value='',placeholder='------',name=item['tname'])
+			input(type='submit',value='Sign Up',data-transition='fade', data-theme='c')
+

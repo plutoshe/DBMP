@@ -1,0 +1,9 @@
+extends layout
+
+block haha
+	h1= title
+	//li #{table[0]['name']}
+	for i in table
+		li 
+			a(href="#{i['link']}") #{i['name']}
+
